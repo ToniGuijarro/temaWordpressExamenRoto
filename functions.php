@@ -23,6 +23,6 @@ add_action("after_setup_theme", "temazo_config", 0);
 
 function register_navwalker()
 {
-    require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker';
+    require_once get_template_directory() . '/home/aguijarror/Local Sites/examen-wordpress/app/public/wp-content/themes/temaWordpressExamenRoto/inc/class-wp-bootstrap-navwalker';    
 }
 add_action('after_setup_theme', 'register_navwalker');
