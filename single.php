@@ -5,6 +5,7 @@
         the_post(); ?>
             
 
-    <?php } ?>
+    <?php } ?> 
 
 <?php get_footer(); ?>
+
