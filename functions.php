@@ -3,9 +3,9 @@
 // Esta función hace...
 function temazo_scripts()
 {
-    wp_enqueue_styles("bootstrap_css", get_theme_file_uri("inc/css/bootstrap.min.css"), array("jquery"), "5.1", "all");
-    wp_enqueue_styles("style_css", get_theme_file_uri("style.css"), array(), "1.0", "all");
-    wp_enqueue_script("bootstrap_js", get_theme_file_uri("inc/js/bootstrap.min.js"), array(), "5.1", true);
+    wp_enqueue_style( "bootstrap_css", get_theme_file_uri("inc/css/bootstrap.min.css"),array(), "4.5","all" );
+    wp_enqueue_style( "style_css", get_theme_file_uri("style.css"),array(), "1.0","all" );
+    wp_enqueue_script( "bootstrap_js", get_theme_file_uri("inc/js/bootstrap.min.js"), array("jquery"),"4.5", true );
 }
 
 add_action("wp_enqueue_scripts", "temazo_scripts", 0);
